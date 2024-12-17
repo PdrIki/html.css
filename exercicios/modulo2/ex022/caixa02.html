@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Parkinsans:wght@300..800&display=swap');
+        body{
+            background-color: gray;
+            font-family: parkinsans;
+            font-weight: lighter;
+            margin: 0px;
+        }
+        header{
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+        }
+        
+        header > h1,nav{
+            text-align: center;
+            margin: 10px;
+        }
+        nav{
+            background-color: darkgray;
+            border: 2px solid; 
+            box-shadow: 2px 2px 4px 1px rgba(0, 0, 0, 0.144);
+        }
+
+        nav > a{
+            padding-right: 15px;
+            text-decoration: none;
+        }
+
+        a:hover{
+            text-shadow: 2px 2px 2px;
+            color: red;
+        }
+
+        main{
+            background-color: cadetblue;
+            text-align: center;
+            margin: 10px;
+            padding: 10px;
+        }
+
+        article#noticia{
+            background-color:rgb(105, 183, 185);
+            margin: 10px;
+        }
+
+        article >aside{
+            color: blueviolet;
+            padding: 1px;
+        } 
+
+        footer{
+            background-color: blanchedalmond;
+            text-align: center;
+        }
+
+        /* 📝 Tags de agrupamento (grouping tags):
+
+        - Sem valor semântico:
+
+        <div>		-> block
+        <span>	-> inline
+
+        - Com valor semântico:
+
+        <header>		-> cabeçalho
+            <nav>	        -> para menus, links, navegação
+
+        <main>			       -> principal
+            <section>		       -> seção
+	            <article>	       -> artigo
+		            <aside>	       -> periférico ao artigo (ex: escritor / autor)
+
+        <footer>	               -> rodapé
+
+
+        */
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meu site</h1>
+        <nav>
+            <a href="#">link</a>
+            <a href="#">link</a>
+            <a href="#">link</a>
+            <a href="#">link</a>
+            <a href="#">link</a>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <article id="noticia">
+                <h2>Notícia sobre o Brasil</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dignissimos blanditiis aut nisi beatae! Minima eius dolor delectus amet reiciendis debitis repudiandae, odio consectetur et, eum quis blanditiis eveniet voluptas esse.</p>
+                <aside>
+                    <p>Artigo escrito por José da Silva</p>
+                </aside>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>Densevolvido  pelo  Curso em video</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de Caixas</title>
+    <style>
+         @import url('https://fonts.googleapis.com/css2?family=Parkinsans:wght@300..800&display=swap');
+         body{
+            font-family: parkinsans;
+            font-weight: lighter;
+            margin: 0px;
+         }
+
+         /*Shorthand: 
+	
+	        margin: 15px 10px 15px 10px;   (sent. horário: top, right, bottom e left)
+	        margin: 10px; 	(nos 4 lados iguais a 10px)
+	        margin: 15px 10px;	(topo e baixo 15px; esquerda e direita 10px)
+	        margin: 15px 10px 25px;	(cima 15px; esquerda e direita 10px; baixo 25px)
+	        margin: 10px auto 15px auto   (cima 10 px; baixo 15px; esq/direita auto)*/
+
+        /*Shorthand:  
+            
+            outline: 5px dashed salmon; (largura, estilo, cor)
+        
+        */
+
+        /*Tranformar box-level em inline-level e vice-versa:
+
+            ex:	h1 {                              ->  h1 era originalmente block (box)
+		            display: inline;
+		        }
+
+		        a {                              ->  a era originalmente inline
+		            display: block;
+		        }
+	
+            - Obs:      display: inline-block;        ->         inline, com algumas características de block
+        */
+        
+        h1{
+            background-color: darkgray;
+            height: 300px;
+            width: 300px;
+            
+            border-width: 10px;
+            border-style: solid;
+            border-color: gray;
+
+            padding-top: 10px;
+            padding-right: 10px;
+            padding-bottom: 10px;
+            padding-left: 10px;
+
+            margin-top: 20px;
+            margin-right: 20px;
+            margin-bottom: 40px;
+            margin-left: 20px;
+
+            outline-width: 5px;
+            outline-style: dashed;
+            outline-color: cadetblue;   
+        }
+
+        a{
+            border: solid 5px darkgray;
+            
+            padding: 2px 5px;
+
+            outline: 2px dashed cadetblue;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplos de caixa box-level</h1>
+    <p>Parágrafos são um exemplo de caixa box-level, mas os <a href="#"> links são um exemplo de caixas inline-level</a> Vamos ver com tudo isso funciona</p>
+</body>
+</html>

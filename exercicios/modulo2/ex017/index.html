@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes em CSS</title>
+    <style>
+        body{
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 16px;
+            /*
+            Medidas absolutas:
+            cm-centimetro
+            mm-milimetro
+            in-polegada
+            px-pixel
+            pt-ponto
+            pc-paica
+            */
+
+            /* 
+            Medidas Relativas:
+	        em	->	relativo ao tamanho natural da fonte
+	        ex	->	relativo a altura x da fonte
+	        rem	->	tipo em, mas relativo a fonte configurada no body
+	        vw	->	relativo a largura da view port
+	        vh	->	relativo a altura da view port
+	        %	->	porcentagem
+
+            Recomendação w3c:  "px" ou "em"
+
+            Altura padrão:  16px ou 1em 
+            */
+
+            /*
+            Peso (negrito):	
+
+		    - fonte mais cheia (negrito) ou fina
+		    - não serve para fontes simples (arial, verdana, times,...)
+		    - serve pra fontes como Work Sans (importar do google)
+
+	        font-weight: nome ou número;	    
+
+            nome:	
+            - lighter		
+		    - normal				
+		    - bold				
+		    - bolder				
+
+            número: -100 a -900 (100=lighter) (900=bolder)
+
+            Estilo (itálico):
+
+	        font-style: valor;		valor: normal ou italic
+
+            Decoração (sublinhado):
+
+	        text-decoration: underline;
+
+            Shorthand font: simplificando fontes.
+
+            Ex:	 font-family: 'Work Sans', sans-serif;
+	         font-weight: bolder;
+	         font-size: 3em;
+	         font-style: italic;
+
+            Simplificando:
+
+		    font:  italic  bolder  3em  'Work Sans', sans-serif;
+
+            - A sequência deve ser:	
+
+		    font-style   ->   font-weight   ->   font-size   ->   font-family;
+
+            - Não precisa ter todas as propriedades, mas a sequência deve ser seguida;
+
+             Ex:  font:  bold  2em  'Work Sans';
+            */
+        }
+        h1,h2{
+            font-family: sans-serif;
+        }
+    </style>
+</head>
+<body>  
+    <h1>Trabalhando com Fontes</h1>  
+    <h3>(serif,sans-serif,monospace)</h3>         
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ab veniam vitae excepturi soluta at itaque sunt tenetur nisi quod, iste tempora mollitia id delectus ea hic, harum deleniti modi repudiandae! Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto molestias vitae numquam, veniam quidem expedita soluta et pariatur est ipsa adipisci consectetur ipsam dolorum assumenda reiciendis blanditiis suscipit, inventore rerum?Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia enim voluptas impedit in dolores veniam labore odio natus, illum sint? Optio ab, aliquam iste nobis voluptates quos nihil labore veniam.</p>
+    <h2>Subtítulo do exercício</h2>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam vero nesciunt corporis dolorum odio, possimus, sequi, beatae est expedita tempore voluptatum. Sit, dolor incidunt sunt obcaecati illo aliquam repellendus Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia officia eveniet sed ipsa illum. Cum labore blanditiis inventore, expedita velit veniam autem fugiat exercitationem vero earum, odit vitae praesentium aspernatur!</p>
+</body>
+</html>

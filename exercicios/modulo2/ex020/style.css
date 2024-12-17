@@ -1,0 +1,39 @@
+@charset "UTF-8";
+
+body{
+    background-image: linear-gradient(to right,#178F85 ,#0C4B46);
+    background-attachment: fixed;
+    font-family: monospace;
+    font-size: 1.2em;
+    font-weight: bolder;
+}
+
+h1#principal{
+    text-align: center;
+    background-image: linear-gradient(to bottom,#634A4C ,#332526d3);
+    color: #28333C; 
+    font-family: monospace;
+    font-weight: bolder;     
+}
+
+h1{
+    color: #0a436e;
+}
+
+.basico{
+    color: #335066;
+    background-color: rgb(137, 190, 190);
+    border-radius: 5px;
+}
+
+.intermediario{
+    color: #335066;
+    background-color: rgb(163, 159, 159);
+    border-radius: 5px;
+}
+
+.avancado{
+    color: #335066;
+    background-color: rgb(51, 177, 177);
+    border-radius: 5px;
+}

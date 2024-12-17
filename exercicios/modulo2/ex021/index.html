@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=div, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Parkinsans:wght@300..800&display=swap');
+       
+        /*  SELETORES PERSONALIZADOS
+           
+            #  = id
+            .  = class
+            :: = pseudo-class
+            >  = children
+        */
+       
+        body{
+            font-family: 'Parkinsans';
+        }
+        div{
+            display: inline-block;
+            text-align: center;
+            background-color: lightgray;
+            border: 1px solid black;
+            height: 200px;
+            width: 200px;  
+        } 
+        div:hover{
+            background-image: linear-gradient(to top, black,white);
+        }
+        
+        div > p {
+            display: none;    
+        }
+        
+        div:hover >p {
+            display: block;
+        }
+        a{
+            color:darkgray;
+            text-decoration: none;
+            font-weight: bolder;   
+        }
+
+        a:visited{
+            color: blueviolet;
+        }
+        a:hover{
+            color: red;
+            text-decoration: underline;
+        }
+
+        a:active{
+            color: yellow;
+        }
+
+        a::after{
+            content: ' → ';
+        }
+    </style>
+</head>
+<body>
+    <div>
+        01
+        <p>TEXTO ESCONDIDO</p>
+    </div>
+    <div>
+        02
+        <P>TEXTO ESCONDIDO</P>
+    </div>
+    <div>
+        03
+        <P>TEXTO ESCONDIDO</P>
+    </div>
+
+    <h1>Personalizando Links</h1>
+    <ul>
+        <li type="square"><a href="https://gustavoguanabara.github.io" target="_blank" rel="external">Respositório GitHub</a></li>
+        <li type="square"><a href="https://youtube.com/cursoemvideo" target="_blank" rel="external">Canal do Youtube</a></li>
+        <li type="square"><a href="https://www.cursoemvideo.com" target="_blank" rel="external">Site do Curso em Video</a></li>
+    </ul>  
+    
+</body>
+</html>
